@@ -95,16 +95,18 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Typing Effect for Hero Title
+// Typing Effect for Hero Title - Disabled to prevent HTML tag display
+// Uncomment below if you want typing effect with plain text only
+/*
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
-    const text = heroTitle.innerHTML;
-    heroTitle.innerHTML = '';
+    const text = heroTitle.textContent;
+    heroTitle.textContent = '';
     let i = 0;
     
     function typeWriter() {
         if (i < text.length) {
-            heroTitle.innerHTML += text.charAt(i);
+            heroTitle.textContent += text.charAt(i);
             i++;
             setTimeout(typeWriter, 50);
         }
@@ -115,6 +117,7 @@ if (heroTitle) {
         setTimeout(typeWriter, 500);
     });
 }
+*/
 
 // Add CSS for burger animation
 const style = document.createElement('style');
