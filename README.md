@@ -111,12 +111,3 @@ python -m http.server 8000
 - [Gradient Generator](https://cssgradient.io/)
 - [Formspree - Contact Form Backend](https://formspree.io/)
 
-## 📄 License
-
-Free to use and modify for your own portfolio!
-
----
-
-**สร้างด้วย ❤️ โดย GitHub Copilot**
-
-🌟 ถ้าชอบอย่าลืมกด Star ด้วยนะครับ!
