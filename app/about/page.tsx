@@ -24,58 +24,61 @@ export default function AboutPage() {
       <OceanBackground />
       <Navbar />
       
-      <main className="parallax-section min-h-screen pt-24 px-4 pb-12">
-        <div className="parallax-content max-w-6xl mx-auto">
-          <div className="glass rounded-3xl p-8 md:p-12 shadow-2xl fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
-              🐙 About Me
+      <main className="min-h-screen px-6 md:px-12 py-32">
+        <div className="parallax-content max-w-5xl mx-auto">
+          <div className="fade-in-up text-center mb-20">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-200 mb-8">
+              About Me
             </h1>
-            
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-              <div className="flex justify-center">
-                <div className="w-80 h-80 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 p-2 shadow-2xl shadow-cyan-500/50">
-                  <img 
-                    src="https://github.com/PPraapatZZ.png" 
-                    alt="Pearapat Kumsing" 
-                    className="w-full h-full rounded-full object-cover"
-                  />
-                </div>
+            <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto font-light">
+              A Computer Engineering student exploring the depths of technology
+            </p>
+          </div>
+          
+          <div className="space-y-32">
+            {/* Profile Section */}
+            <div className="text-center space-y-8">
+              <div className="flex justify-center mb-12">
+                <img 
+                  src="https://github.com/PPraapatZZ.png" 
+                  alt="Pearapat Kumsing" 
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-2xl"
+                />
               </div>
               
-              <div className="space-y-6 text-white/90">
-                <h2 className="text-3xl font-bold text-cyan-300">Pearapat Kumsing (Pea)</h2>
-                <p className="text-xl text-cyan-100">Computer Engineering Student @ KMITL</p>
-                
-                <p className="text-lg leading-relaxed">
-                  I'm a passionate Computer Engineering student at King Mongkut's Institute of Technology Ladkrabang (KMITL),
-                  diving deep into the ocean of full-stack development and emerging technologies.
-                </p>
-                
-                <p className="text-lg leading-relaxed">
-                  Like a fish exploring the vast ocean, I'm always eager to learn new technologies and take on challenging
-                  projects that push the boundaries of innovation. My journey in tech is driven by curiosity and the desire
-                  to build solutions that make a difference.
-                </p>
-              </div>
+              <h2 className="text-white/90">Pearapat Kumsing</h2>
+              <p className="text-2xl md:text-3xl text-cyan-200/80 font-light">Computer Engineering @ KMITL</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="glass rounded-xl p-6 border-2 border-cyan-400/30">
-                <div className="text-5xl mb-4">📧</div>
-                <h3 className="text-cyan-300 font-semibold mb-2">Email</h3>
-                <p className="text-white/80">pea6423pea@gmail.com</p>
+            {/* Bio Section */}
+            <div className="max-w-3xl mx-auto space-y-8 text-center">
+              <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-light">
+                Passionate about full-stack development and emerging technologies.
+              </p>
+              
+              <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-light">
+                Always eager to learn and build solutions that make a difference.
+              </p>
+            </div>
+            
+            {/* Contact Info */}
+            <div className="grid md:grid-cols-3 gap-16 text-center max-w-4xl mx-auto">
+              <div className="space-y-4">
+                <div className="text-6xl">📧</div>
+                <h3 className="text-cyan-200/90">Email</h3>
+                <p className="text-white/60">pea6423pea@gmail.com</p>
               </div>
               
-              <div className="glass rounded-xl p-6 border-2 border-cyan-400/30">
-                <div className="text-5xl mb-4">📱</div>
-                <h3 className="text-cyan-300 font-semibold mb-2">Phone</h3>
-                <p className="text-white/80">098-492-6443</p>
+              <div className="space-y-4">
+                <div className="text-6xl">📱</div>
+                <h3 className="text-cyan-200/90">Phone</h3>
+                <p className="text-white/60">098-492-6443</p>
               </div>
               
-              <div className="glass rounded-xl p-6 border-2 border-cyan-400/30">
-                <div className="text-5xl mb-4">📍</div>
-                <h3 className="text-cyan-300 font-semibold mb-2">Location</h3>
-                <p className="text-white/80">Bangkok, Thailand</p>
+              <div className="space-y-4">
+                <div className="text-6xl">📍</div>
+                <h3 className="text-cyan-200/90">Location</h3>
+                <p className="text-white/60">Bangkok, Thailand</p>
               </div>
             </div>
           </div>

@@ -48,56 +48,50 @@ export default function ProjectsPage() {
       <OceanBackground />
       <Navbar />
       
-      <main className="min-h-screen pt-24 px-4 pb-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="glass rounded-3xl p-8 md:p-12 shadow-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
-              🚀 My Projects
+      <main className="min-h-screen px-6 md:px-12 py-32">
+        <div className="max-w-5xl mx-auto">
+          <div className="fade-in-up text-center mb-32">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-200 mb-8">
+              Projects
             </h1>
-            <p className="text-center text-cyan-200 mb-12 text-lg">
-              Treasures from the depths of code
+            <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto font-light">
+              Selected works
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projects.map((project, i) => (
-                <div 
-                  key={i} 
-                  className="glass rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300 border-2 border-cyan-400/20"
-                >
-                  <div className="bg-gradient-to-r from-cyan-600 to-blue-600 h-32 flex items-center justify-center">
-                    <div className="text-7xl">{project.icon}</div>
-                  </div>
-                  
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-cyan-300 mb-3">{project.title}</h3>
-                    <p className="text-white/80 mb-4">{project.desc}</p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag, j) => (
-                        <span 
-                          key={j} 
-                          className="px-3 py-1 glass text-cyan-300 rounded-full text-sm font-medium border border-cyan-400/30"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                    
-                    {project.link && (
-                      <a 
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold transition"
-                      >
-                        <span>View on GitHub</span>
-                        <span>→</span>
-                      </a>
-                    )}
-                  </div>
+          </div>
+          
+          <div className="space-y-32">
+            {projects.map((project, i) => (
+              <div 
+                key={i} 
+                className="text-center space-y-6 hover:scale-105 transition-all duration-500"
+              >
+                <div className="text-8xl mb-8">{project.icon}</div>
+                <h3 className="text-white/90">{project.title}</h3>
+                <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">{project.desc}</p>
+                
+                <div className="flex flex-wrap gap-4 justify-center pt-4">
+                  {project.tags.map((tag, j) => (
+                    <span 
+                      key={j} 
+                      className="text-cyan-300/60 text-sm font-light"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-              ))}
-            </div>
+                
+                {project.link && (
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-cyan-400/80 hover:text-cyan-300 font-light transition pt-4"
+                  >
+                    View Project →
+                  </a>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </main>

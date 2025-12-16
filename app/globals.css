@@ -1,5 +1,46 @@
 @import "tailwindcss";
 
+/* Apple-inspired Typography */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.012em;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* Ocean theme animations */
 @keyframes float {
   0%, 100% { transform: translateY(0) translateX(0); }
@@ -14,7 +55,7 @@
 .bubble {
   position: absolute;
   font-size: 2rem;
-  opacity: 0.7;
+  opacity: 0.4;
   animation: swim linear infinite;
 }
 
@@ -56,11 +97,11 @@
   animation-delay: 15s;
 }
 
-/* Glass morphism effect */
+/* Minimal glass effect - very subtle */
 .glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Parallax scrolling effect */
@@ -70,6 +111,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 6rem 1rem;
 }
 
 .parallax-content {
@@ -77,16 +119,11 @@
   will-change: transform;
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Fade in animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(60px);
   }
   to {
     opacity: 1;
@@ -95,7 +132,7 @@ html {
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 /* Staggered animations */

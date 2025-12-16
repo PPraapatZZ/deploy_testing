@@ -32,100 +32,87 @@ export default function ContactPage() {
       <OceanBackground />
       <Navbar />
       
-      <main className="parallax-section min-h-screen pt-24 px-4 pb-12">
-        <div className="parallax-content max-w-6xl mx-auto">
-          <div className="glass rounded-3xl p-8 md:p-12 shadow-2xl fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
-              ✉️ Contact Me
+      <main className="min-h-screen px-6 md:px-12 py-32">
+        <div className="parallax-content max-w-4xl mx-auto">
+          <div className="fade-in-up text-center mb-32">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-200 mb-8">
+              Get in Touch
             </h1>
-            <p className="text-center text-cyan-200 mb-12 text-lg">
-              Let's dive into collaboration together!
+            <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto font-light">
+              Let's collaborate on something amazing
             </p>
-            
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-cyan-300">Get in Touch!</h2>
-                <p className="text-lg text-white/80 leading-relaxed">
-                  Whether you have an exciting project, want to discuss web development, 
-                  or just want to say hi - feel free to reach out! I'm always open to new opportunities 
-                  and interesting conversations. 🌊
-                </p>
-                
-                <div className="space-y-4">
-                  <a 
-                    href="https://github.com/PPraapatZZ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-4 glass rounded-xl p-4 hover:shadow-lg hover:shadow-cyan-500/30 transition border-2 border-cyan-400/20"
-                  >
-                    <div className="text-4xl">💻</div>
-                    <div>
-                      <h3 className="text-cyan-300 font-semibold">GitHub</h3>
-                      <p className="text-white/70 text-sm">@PPraapatZZ</p>
-                    </div>
-                  </a>
-                  
-                  <a 
-                    href="mailto:pea6423pea@gmail.com"
-                    className="flex items-center gap-4 glass rounded-xl p-4 hover:shadow-lg hover:shadow-cyan-500/30 transition border-2 border-cyan-400/20"
-                  >
-                    <div className="text-4xl">📧</div>
-                    <div>
-                      <h3 className="text-cyan-300 font-semibold">Email</h3>
-                      <p className="text-white/70 text-sm">pea6423pea@gmail.com</p>
-                    </div>
-                  </a>
-                  
-                  <a 
-                    href="tel:0984926443"
-                    className="flex items-center gap-4 glass rounded-xl p-4 hover:shadow-lg hover:shadow-cyan-500/30 transition border-2 border-cyan-400/20"
-                  >
-                    <div className="text-4xl">📱</div>
-                    <div>
-                      <h3 className="text-cyan-300 font-semibold">Phone</h3>
-                      <p className="text-white/70 text-sm">098-492-6443</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
+          </div>
+          
+          <div className="space-y-20">
+            {/* Contact Links */}
+            <div className="space-y-12 text-center">
+              <a 
+                href="https://github.com/PPraapatZZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block space-y-3 py-8 hover:scale-105 transition-all duration-500"
+              >
+                <div className="text-6xl">💻</div>
+                <h3 className="text-white/90">GitHub</h3>
+                <p className="text-cyan-300/70 font-light">@PPraapatZZ</p>
+              </a>
               
-              <div className="glass rounded-xl p-8 border-2 border-cyan-400/20">
-                <h3 className="text-2xl font-bold text-cyan-300 mb-6">Send a Message</h3>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                    className="w-full px-4 py-3 bg-white/10 border-2 border-cyan-400/30 rounded-lg focus:border-cyan-400 focus:outline-none transition text-white placeholder-white/50"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                    className="w-full px-4 py-3 bg-white/10 border-2 border-cyan-400/30 rounded-lg focus:border-cyan-400 focus:outline-none transition text-white placeholder-white/50"
-                  />
-                  <textarea
-                    name="message"
-                    rows={5}
-                    placeholder="Your Message"
-                    required
-                    className="w-full px-4 py-3 bg-white/10 border-2 border-cyan-400/30 rounded-lg focus:border-cyan-400 focus:outline-none transition resize-none text-white placeholder-white/50"
-                  ></textarea>
-                  <button 
-                    type="submit" 
-                    className="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition transform hover:scale-105"
-                  >
-                    Send Message 🚀
-                  </button>
-                </form>
-              </div>
+              <a 
+                href="mailto:pea6423pea@gmail.com"
+                className="block space-y-3 py-8 hover:scale-105 transition-all duration-500"
+              >
+                <div className="text-6xl">📧</div>
+                <h3 className="text-white/90">Email</h3>
+                <p className="text-cyan-300/70 font-light">pea6423pea@gmail.com</p>
+              </a>
+              
+              <a 
+                href="tel:0984926443"
+                className="block space-y-3 py-8 hover:scale-105 transition-all duration-500"
+              >
+                <div className="text-6xl">📱</div>
+                <h3 className="text-white/90">Phone</h3>
+                <p className="text-cyan-300/70 font-light">098-492-6443</p>
+              </a>
+            </div>
+            
+            {/* Simple Message Form */}
+            <div className="max-w-2xl mx-auto pt-16">
+              <h3 className="text-center text-white/80 mb-12 text-2xl font-light">Send a Message</h3>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                  className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-lg focus:border-cyan-400/50 focus:outline-none transition text-white placeholder-white/40"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-lg focus:border-cyan-400/50 focus:outline-none transition text-white placeholder-white/40"
+                />
+                <textarea
+                  name="message"
+                  rows={5}
+                  placeholder="Message"
+                  required
+                  className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-lg focus:border-cyan-400/50 focus:outline-none transition resize-none text-white placeholder-white/40"
+                ></textarea>
+                <button 
+                  type="submit" 
+                  className="w-full px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-lg hover:bg-white/20 transition-all duration-300 font-light"
+                >
+                  Send
+                </button>
+              </form>
             </div>
           </div>
           
-          <div className="mt-8 text-center glass rounded-xl p-6">
-            <p className="text-cyan-200">© 2025 Pearapat Kumsing • Made with ❤️ & 🌊 by Pea</p>
+          <div className="mt-32 text-center">
+            <p className="text-white/40 text-sm font-light">© 2025 Pearapat Kumsing</p>
           </div>
         </div>
       </main>

@@ -26,68 +26,74 @@ export default function Home() {
       <OceanBackground />
       <Navbar />
       
-      {/* Hero Section with Parallax */}
-      <section className="parallax-section min-h-screen flex items-center justify-center pt-20 px-4">
-        <div className="parallax-content max-w-4xl mx-auto text-center space-y-8">
-          <div className="glass rounded-3xl p-12 shadow-2xl fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 animate-pulse">
-              🌊 Welcome to Neptune's Realm
+      {/* Apple-style Full Screen Hero */}
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-12">
+        <div className="parallax-content max-w-6xl mx-auto text-center py-32">
+          <div className="fade-in-up space-y-8">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-200 to-purple-200">
+              Pearapat Kumsing
             </h1>
             
-            <p className="text-2xl md:text-3xl text-cyan-100 font-semibold mb-4">
-              Pearapat Kumsing
+            <h2 className="text-white/90 font-light">
+              Computer Engineering Student
+            </h2>
+            
+            <p className="text-2xl md:text-3xl text-cyan-100/80 max-w-3xl mx-auto font-light">
+              Building the future with code, one line at a time.
             </p>
             
-            <p className="text-xl text-white/90 mb-8">
-              Computer Engineering Student | Full-Stack Developer
-            </p>
-            
-            <p className="text-lg text-cyan-200 mb-8">
-              Diving deep into the ocean of code 🐠
-            </p>
-            
-            <div className="flex gap-6 justify-center flex-wrap">
-              <Link 
-                href="/about"
-                className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition transform hover:scale-105"
-              >
-                🐙 Explore My Story
-              </Link>
+            <div className="flex gap-8 justify-center flex-wrap pt-8">
               <Link 
                 href="/projects"
-                className="px-8 py-4 glass text-cyan-200 rounded-full font-semibold hover:shadow-lg transition transform hover:scale-105 border-2 border-cyan-400/50"
+                className="px-10 py-4 bg-white/10 backdrop-blur-md text-white rounded-full text-lg font-medium hover:bg-white/20 transition-all duration-300"
               >
-                🐚 View Projects
+                View Projects
+              </Link>
+              <Link 
+                href="/contact"
+                className="px-10 py-4 text-cyan-200 rounded-full text-lg font-medium hover:text-white transition-all duration-300"
+              >
+                Get in Touch
               </Link>
             </div>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in-up stagger-2">
-            <Link href="/about" className="glass rounded-xl p-6 hover:shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105">
-              <div className="text-4xl mb-2">👤</div>
-              <p className="text-cyan-200 font-semibold">About</p>
-            </Link>
-            <Link href="/skills" className="glass rounded-xl p-6 hover:shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105">
-              <div className="text-4xl mb-2">⚡</div>
-              <p className="text-cyan-200 font-semibold">Skills</p>
-            </Link>
-            <Link href="/projects" className="glass rounded-xl p-6 hover:shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105">
-              <div className="text-4xl mb-2">🚀</div>
-              <p className="text-cyan-200 font-semibold">Projects</p>
-            </Link>
-            <Link href="/contact" className="glass rounded-xl p-6 hover:shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105">
-              <div className="text-4xl mb-2">✉️</div>
-              <p className="text-cyan-200 font-semibold">Contact</p>
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Scroll indicator */}
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 text-cyan-300 animate-bounce">
-        <div className="text-4xl">↓</div>
-        <p className="text-sm">Scroll to explore</p>
-      </div>
+      {/* Clean Navigation Cards */}
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-12">
+        <div className="parallax-content max-w-6xl mx-auto py-32">
+          <h2 className="text-center mb-20 text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-200">
+            Explore
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            <Link href="/about" className="group text-center space-y-6 py-16 transition-all duration-500 hover:scale-105">
+              <div className="text-7xl md:text-8xl">👤</div>
+              <h3 className="text-white/90 group-hover:text-cyan-200 transition-colors duration-300">About Me</h3>
+              <p className="text-white/60 text-lg max-w-sm mx-auto">Learn about my journey in tech</p>
+            </Link>
+            
+            <Link href="/skills" className="group text-center space-y-6 py-16 transition-all duration-500 hover:scale-105">
+              <div className="text-7xl md:text-8xl">⚡</div>
+              <h3 className="text-white/90 group-hover:text-cyan-200 transition-colors duration-300">Skills</h3>
+              <p className="text-white/60 text-lg max-w-sm mx-auto">Technologies I work with</p>
+            </Link>
+            
+            <Link href="/projects" className="group text-center space-y-6 py-16 transition-all duration-500 hover:scale-105">
+              <div className="text-7xl md:text-8xl">🚀</div>
+              <h3 className="text-white/90 group-hover:text-cyan-200 transition-colors duration-300">Projects</h3>
+              <p className="text-white/60 text-lg max-w-sm mx-auto">My latest creations</p>
+            </Link>
+            
+            <Link href="/contact" className="group text-center space-y-6 py-16 transition-all duration-500 hover:scale-105">
+              <div className="text-7xl md:text-8xl">✉️</div>
+              <h3 className="text-white/90 group-hover:text-cyan-200 transition-colors duration-300">Contact</h3>
+              <p className="text-white/60 text-lg max-w-sm mx-auto">Let's connect</p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
