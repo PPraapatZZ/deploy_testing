@@ -55,22 +55,10 @@ export default function Home() {
 
   const projects: Project[] = [
     {
-      icon: 'fas fa-shopping-cart',
-      title: 'E-Commerce Website',
-      desc: 'Modern online shopping platform with payment system and product management',
-      tags: ['React', 'Node.js', 'MongoDB']
-    },
-    {
-      icon: 'fas fa-tasks',
-      title: 'Task Management App',
-      desc: 'Task management application that helps teams collaborate efficiently',
-      tags: ['Vue.js', 'Firebase', 'Tailwind']
-    },
-    {
-      icon: 'fas fa-blog',
-      title: 'Personal Blog',
-      desc: 'Personal blog with easy-to-use CMS system',
-      tags: ['Next.js', 'Markdown', 'Vercel']
+      icon: 'fas fa-globe',
+      title: 'Portfolio Website',
+      desc: 'Modern portfolio website built with Next.js, TypeScript, and Tailwind CSS deployed on Firebase',
+      tags: ['Next.js', 'TypeScript', 'Tailwind', 'Firebase']
     }
   ]
 
