@@ -1,18 +1,35 @@
 'use client'
 
 import Link from 'next/link'
+import { useEffect } from 'react'
 import OceanBackground from './components/OceanBackground'
 import Navbar from './components/Navbar'
 
 export default function Home() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.parallax-content')
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect()
+        const scrolled = window.scrollY
+        const rate = scrolled * -0.3
+        ;(el as HTMLElement).style.transform = `translateY(${rate}px)`
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
       <OceanBackground />
       <Navbar />
       
-      <main className="min-h-screen flex items-center justify-center pt-20 px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="glass rounded-3xl p-12 shadow-2xl">
+      {/* Hero Section with Parallax */}
+      <section className="parallax-section min-h-screen flex items-center justify-center pt-20 px-4">
+        <div className="parallax-content max-w-4xl mx-auto text-center space-y-8">
+          <div className="glass rounded-3xl p-12 shadow-2xl fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 animate-pulse">
               🌊 Welcome to Neptune's Realm
             </h1>
@@ -45,7 +62,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in-up stagger-2">
             <Link href="/about" className="glass rounded-xl p-6 hover:shadow-lg hover:shadow-blue-500/30 transition transform hover:scale-105">
               <div className="text-4xl mb-2">👤</div>
               <p className="text-cyan-200 font-semibold">About</p>
@@ -64,7 +81,13 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </main>
+      </section>
+
+      {/* Scroll indicator */}
+      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 text-cyan-300 animate-bounce">
+        <div className="text-4xl">↓</div>
+        <p className="text-sm">Scroll to explore</p>
+      </div>
     </>
   )
 }
