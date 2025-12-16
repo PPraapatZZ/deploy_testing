@@ -3,17 +3,17 @@
 export default function OceanBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      {/* Video Background - Beautiful Ocean Scene */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-50"
-      >
-        <source src="https://cdn.pixabay.com/video/2022/11/07/138747-768997038_large.mp4" type="video/mp4" />
-        <source src="https://cdn.pixabay.com/video/2020/05/08/37864-419186096_large.mp4" type="video/mp4" />
-      </video>
+      {/* YouTube Embed Background - Lofi underwater music */}
+      <iframe
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        src="https://www.youtube.com/embed/QCL7VXuO35g?autoplay=1&mute=1&loop=1&playlist=QCL7VXuO35g&controls=0&showinfo=0&rel=0&modestbranding=1"
+        title="Ocean Background"
+        allow="autoplay; encrypted-media"
+        style={{
+          transform: 'scale(1.5)',
+          opacity: 0.4
+        }}
+      />
       
       {/* Overlay Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 via-teal-900/60 to-blue-900/80"></div>
