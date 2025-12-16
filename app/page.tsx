@@ -55,6 +55,24 @@ export default function Home() {
 
   const projects: Project[] = [
     {
+      icon: 'fas fa-code',
+      title: 'TypeScript Merge Algorithm',
+      desc: 'Three-way merge algorithm that combines sorted arrays without using built-in sort functions',
+      tags: ['TypeScript', 'Jest', 'Algorithm']
+    },
+    {
+      icon: 'fas fa-hotel',
+      title: 'JubJub Hotel Management System',
+      desc: 'Hotel management system with infinite rooms, guest check-in/out, and CSV export functionality',
+      tags: ['Python', 'Pandas', 'OOP']
+    },
+    {
+      icon: 'fas fa-network-wired',
+      title: 'UDP Socket File Transfer',
+      desc: 'Reliable UDP file transfer protocol with MD5 verification and backup management',
+      tags: ['Python', 'Socket', 'Networking']
+    },
+    {
       icon: 'fas fa-globe',
       title: 'Portfolio Website',
       desc: 'Modern portfolio website built with Next.js, TypeScript, and Tailwind CSS deployed on Firebase',
