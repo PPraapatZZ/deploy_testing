@@ -1,0 +1,3 @@
+module.exports=[62925,a=>{"use strict";var b=a.i(7997);function c({children:a}){return(0,b.jsxs)("html",{lang:"en",children:[(0,b.jsx)("head",{children:(0,b.jsx)("link",{rel:"stylesheet",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"})}),(0,b.jsx)("body",{children:a})]})}a.s(["default",()=>c,"metadata",0,{title:"Pearapat Kumsing - Portfolio",description:"Computer Engineering Student | Full-Stack Developer at KMITL"}])}];
+
+//# sourceMappingURL=app_layout_5a7e0b9f.js.map
