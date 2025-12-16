@@ -3,15 +3,16 @@
 export default function OceanBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      {/* Video Background */}
+      {/* Video Background - Beautiful Ocean Scene */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-60"
+        className="absolute inset-0 w-full h-full object-cover opacity-50"
       >
-        <source src="https://cdn.pixabay.com/video/2016/03/31/2893-161879721_large.mp4" type="video/mp4" />
+        <source src="https://cdn.pixabay.com/video/2022/11/07/138747-768997038_large.mp4" type="video/mp4" />
+        <source src="https://cdn.pixabay.com/video/2020/05/08/37864-419186096_large.mp4" type="video/mp4" />
       </video>
       
       {/* Overlay Gradient */}
