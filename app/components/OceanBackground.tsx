@@ -11,7 +11,8 @@ export default function OceanBackground() {
         allow="autoplay; encrypted-media"
         style={{
           transform: 'scale(1.5)',
-          opacity: 0.4
+          //opacity: 0.4
+
         }}
       />
       
