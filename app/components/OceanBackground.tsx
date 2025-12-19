@@ -11,13 +11,12 @@ export default function OceanBackground() {
         allow="autoplay; encrypted-media"
         style={{
           transform: 'scale(1.5)',
-          //opacity: 0.4
-
+          opacity: 1
         }}
       />
       
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 via-teal-900/60 to-blue-900/80"></div>
+      {/* Very light overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 via-transparent to-blue-900/10"></div>
       
       {/* Animated Fish/Bubbles */}
       <div className="absolute inset-0">
