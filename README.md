@@ -1,113 +1,95 @@
-# 🎨 My Portfolio Website
+# Portfolio Website
 
-Portfolio website สวยงามและทันสมัย พร้อม responsive design
+A professional portfolio website built with Next.js, TypeScript, and Tailwind CSS featuring an immersive ocean-themed design.
 
-## ✨ Features
+## Features
 
-- 🎯 **Modern Design** - ดีไซน์สวยงามด้วย gradient และ animations
-- 📱 **Responsive** - รองรับทุกขนาดหน้าจอ (Desktop, Tablet, Mobile)
-- ⚡ **Fast & Lightweight** - โหลดเร็ว ใช้งานได้ลื่นไหล
-- 🎭 **Smooth Animations** - เอฟเฟกต์เคลื่อนไหวที่สวยงาม
-- 📧 **Contact Form** - ฟอร์มติดต่อพร้อมใช้งาน
+- Modern, responsive design optimized for all devices
+- Interactive ocean background with animated waves
+- Server-side rendering with Next.js 14
+- Type-safe development with TypeScript
+- Utility-first styling with Tailwind CSS
+- Smooth page transitions and animations
+- Contact form integration ready
+- SEO optimized
 
-## 📂 Project Structure
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Firebase Hosting
+- **Version Control:** Git
+
 
 ```
 deploy_testing/
-├── index.html      # หน้าหลักของเว็บไซต์
-├── styles.css      # สไตล์และการออกแบบ
-├── script.js       # JavaScript สำหรับ interactivity
-└── README.md       # เอกสารคู่มือ
-```
 
-## 🚀 วิธี Deploy
+## Getting Started
 
-### วิธีที่ 1: Deploy ด้วย GitHub Pages (แนะนำ - ฟรี!)
-
-1. **Push โค้ดขึ้น GitHub** (ทำแล้ว ✅)
-   ```bash
-   git add .
-   git commit -m "Add portfolio website"
-   git push origin main
-   ```
-
-2. **เปิดใช้งาน GitHub Pages**
-   - ไปที่ Repository Settings
-   - เลื่อนไปที่ **Pages** ในเมนูด้านซ้าย
-   - ในส่วน **Source** เลือก `main` branch
-   - คลิก **Save**
-   - รอสักครู่ เว็บจะพร้อมใช้งานที่: `https://ppraaapatzz.github.io/deploy_testing/`
-
-### วิธีที่ 2: Deploy ด้วย Netlify
-
-1. ไปที่ [netlify.com](https://netlify.com)
-2. เชื่อมต่อ GitHub account
-3. เลือก repository นี้
-4. กด Deploy
-5. เว็บจะได้ URL แบบ: `your-site.netlify.app`
-
-### วิธีที่ 3: Deploy ด้วย Vercel
-
-1. ไปที่ [vercel.com](https://vercel.com)
-2. Import GitHub repository
-3. กด Deploy
-4. เว็บจะได้ URL แบบ: `your-site.vercel.app`
-
-## 🎨 การปรับแต่ง
-
-### เปลี่ยนข้อมูลส่วนตัว
-
-แก้ไขในไฟล์ [index.html](index.html):
-
-- บรรทัด 36: เปลี่ยน `Your Name` เป็นชื่อของคุณ
-- บรรทัด 68, 69: เปลี่ยน email และที่อยู่
-- บรรทัด 185: เปลี่ยน GitHub link
-- บรรทัด 254: เปลี่ยน footer ข้อความ
-
-### เปลี่ยนสี Theme
-
-แก้ไขในไฟล์ [styles.css](styles.css) บรรทัด 8-16:
-
-```css
-:root {
-    --primary-color: #6366f1;     /* สีหลัก */
-    --secondary-color: #8b5cf6;   /* สีรอง */
-    --dark-color: #1e293b;        /* สีเข้ม */
-    --light-color: #f1f5f9;       /* สีอ่อน */
-}
-```
-
-### เพิ่มโปรเจค
-
-คัดลอกโค้ด `<div class="project-card">` ในไฟล์ [index.html](index.html) (บรรทัด 128-152) และแก้ไขข้อมูล
-
-## 🌐 ดูตัวอย่างในเครื่อง
-
-เปิดไฟล์ `index.html` ด้วย browser หรือใช้ Live Server:
+First, clone the repository and install dependencies:
 
 ```bash
-# ถ้ามี Python
-python -m http.server 8000
-
-# หรือใช้ VS Code Extension: Live Server
-# คลิกขวาที่ index.html -> Open with Live Server
+git clone https://github.com/PPraapatZZ/deploy_testing.git
+cd deploy_testing
+npm install
 ```
 
-เข้าดูที่: `http://localhost:8000`
+Run the development server:
 
-## 📝 To-Do List สำหรับปรับแต่ง
+```bash
+npm run dev
+```
 
-- [ ] เปลี่ยนชื่อและข้อมูลส่วนตัว
-- [ ] เพิ่ม/แก้ไขโปรเจคของคุณเอง
-- [ ] ใส่รูปภาพของคุณแทน icon
-- [ ] อัพเดท social media links
-- [ ] เชื่อมต่อ contact form กับ email จริง (Formspree, EmailJS)
-- [ ] เพิ่ม Google Analytics (ถ้าต้องการ)
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🔗 Resources
+## Building for Production
 
-- [Font Awesome Icons](https://fontawesome.com/icons)
-- [Google Fonts](https://fonts.google.com/)
-- [Gradient Generator](https://cssgradient.io/)
-- [Formspree - Contact Form Backend](https://formspree.io/)
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Start the production server:
+
+```bash
+npm start
+```
+
+## Deployment
+
+### Firebase Hosting
+
+This project is configured for Firebase Hosting. Deploy using:
+
+```bash
+firebase deploy
+```
+
+### Vercel (Alternative)
+
+The easiest way to deploy a Next.js app:
+
+1. Push your code to GitHub
+2. Import the repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and configure the build
+
+## Configuration
+
+The website can be customized through various configuration files:
+
+- `tailwind.config.js` - Theme colors, fonts, and breakpoints
+- `next.config.js` - Next.js specific settings
+- `firebase.json` - Firebase hosting rules and redirects
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Contact
+
+Pearapat Kumsing - [pea6423pea@gmail.com](mailto:pea6423pea@gmail.com)
+
+Project Link: [https://github.com/PPraapatZZ/deploy_testing](https://github.com/PPraapatZZ/deploy_testing)
 
