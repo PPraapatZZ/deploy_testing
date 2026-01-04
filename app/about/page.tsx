@@ -124,7 +124,7 @@ export default function AboutPage() {
               <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 text-center hover:bg-white/10 transition-all">
                 <div className="text-5xl mb-4">📱</div>
                 <h3 className="text-cyan-200/90 text-lg mb-2">Phone</h3>
-                <p className="text-white/60">083-250-4733</p>
+                <p className="text-white/60">063-250-4733</p>
               </div>
 
               <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 text-center hover:bg-white/10 transition-all">
